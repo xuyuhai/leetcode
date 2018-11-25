@@ -34,19 +34,19 @@ def get_one_content(url,driver):
 def get_content1(url_list):
     # 启动Chrome驱动
     driver = webdriver.Chrome("D:\\Program Files\\chromedriver.exe", service_args=service_args)
-    for i in range(1,3):
+    for i in range(1,222):
         url = url_list[i]
         get_one_content(url,driver)
     driver.quit()
 def get_content2(url_list):
     driver2 = webdriver.Chrome("D:\\Program Files\\chromedriver.exe", service_args=service_args)
-    for i in range(3,5):
+    for i in range(223,446):
         url = url_list[i]
         get_one_content(url,driver2)
     driver2.quit()
 def get_content3(url_list):
      driver3 = webdriver.Chrome("D:\\Program Files\\chromedriver.exe", service_args=service_args)
-     for i in range(5,7):
+     for i in range(447,667):
          url = url_list[i]
          get_one_content(url,driver3)
      driver3.quit()
